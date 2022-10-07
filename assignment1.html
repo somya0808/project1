@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color:rgba(250,140,100,0.2) ;">
+    <div class="form-container">
+        <form onsubmit="myfunc(event)">
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name_id" placeholder="Tera naam" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">E-mail</label>
+                <input class="form-control" type="email" id="email_id" rows="3" placeholder="email bhai" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <input class="form-control" id="message_id" type="text" rows="3" required placeholder="git commit message!">
+              </div>
+        <button type="send" class="btn btn-primary" >Send</button>
+
+    </form>
+    
+</div>
+    <script type="text/javascript">
+        function myfunc(event){
+            event.preventDefault();
+            var name_id = document.getElementById("name_id").value;
+            var email_id = document.getElementById("email_id").value;
+            var message_id = document.getElementById("message_id").value;
+
+            localStorage.setItem('Is_name_id',name_id);
+            localStorage.setItem('Is_email_id',email_id);
+            localStorage.setItem('Is_message_id',message_id);
+        }
+    </script>
+</body>
+</html>

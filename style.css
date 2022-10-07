@@ -1,0 +1,33 @@
+
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins',Sans-seriff;
+
+} */
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+form input {
+    margin: 2px;
+    padding: 6px;
+    
+}
+.form-container{
+    /* border:1px solid black; */
+    /* align-items: center; */
+    text-align: center;
+    /* border-width: 12px; */
+    /* border-color: black; */
+    /* background-color: beige; */
+}
+#message_id{
+    height: 12vh;
+}
+label{
+    float: left;
+}
